@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contents{
+     height: auto;
+     width: 100%;
+}
+
+.header{
+    height: 200px;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.header > div{
+    padding: 10px 10px;
+}
+
+.header .pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.info{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+
+}
+
+.fave-sub{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+
+.fave-sub .year{
+    height:40px;
+    width: 100px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+@media all and (max-width: 600px) {
+    .fave-sub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        text-align: center;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+}
